@@ -17,6 +17,8 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
      */
     public JfrmBsoPrincipal() {
         initComponents();
+        setTitle("Sistema de vendas de jogos de plataforma");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -30,7 +32,8 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMnuUsuarios = new javax.swing.JMenuItem();
+        jMnuClientes = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -38,9 +41,18 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMenu1.setMnemonic('C');
         jMenu1.setText("Cadastros");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem1.setText("Usuários");
-        jMenu1.add(jMenuItem1);
+        jMnuUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-usuário-24.png"))); // NOI18N
+        jMnuUsuarios.setMnemonic('U');
+        jMnuUsuarios.setText("Usuários");
+        jMnuUsuarios.addActionListener(this::jMnuUsuariosActionPerformed);
+        jMenu1.add(jMnuUsuarios);
+
+        jMnuClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cliente.png"))); // NOI18N
+        jMnuClientes.setMnemonic('C');
+        jMnuClientes.setText("Cliente");
+        jMenu1.add(jMnuClientes);
 
         jMenuBar1.add(jMenu1);
 
@@ -62,6 +74,12 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMnuUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuUsuariosActionPerformed
+        // TODO add your handling code here:
+        JDlgBsoUsuarios jdlgBsoUsuarios = new JDlgBsoUsuarios(null, true);
+        jdlgBsoUsuarios.setVisible(true);
+    }//GEN-LAST:event_jMnuUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -92,6 +110,7 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMnuClientes;
+    private javax.swing.JMenuItem jMnuUsuarios;
     // End of variables declaration//GEN-END:variables
 }

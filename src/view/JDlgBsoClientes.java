@@ -20,7 +20,7 @@ public class JDlgBsoClientes extends javax.swing.JDialog {
     public JDlgBsoClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Cadastro de Usuarios");
+        setTitle("Cadastro de Clientes");
         setLocationRelativeTo(null);
 
         jTxtNome.setEnabled(false);

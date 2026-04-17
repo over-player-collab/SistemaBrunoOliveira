@@ -28,6 +28,7 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
         jTxtTipo.setEnabled(false);
         jFrmtPreco.setEnabled(false);
         jTxtTitulo.setEnabled(false);
+        jCboClassificacao.setEnabled(false);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
     }
@@ -38,6 +39,7 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
         jTxtTipo.setEnabled(valor);
         jFrmtPreco.setEnabled(valor);
         jTxtTitulo.setEnabled(valor);
+        jCboClassificacao.setEnabled(valor);
         jBtnCancelar.setEnabled(valor);
         jBtnConfirmar.setEnabled(valor);
         
@@ -52,6 +54,7 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
         jTxtTipo.setEnabled(true);
         jFrmtPreco.setEnabled(true);
         jTxtTitulo.setEnabled(true);
+        jCboClassificacao.setEnabled(true);
         jBtnCancelar.setEnabled(true);
         jBtnConfirmar.setEnabled(true);
         
@@ -66,6 +69,7 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
         jTxtTipo.setEnabled(false);
         jFrmtPreco.setEnabled(false);
         jTxtTitulo.setEnabled(false);
+        jCboClassificacao.setEnabled(false);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
         
@@ -100,6 +104,8 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
         jTxtTipo = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jFrmtPreco = new javax.swing.JFormattedTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jCboClassificacao = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -137,6 +143,10 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
 
         jLabel5.setText("Preço");
 
+        jLabel6.setText("Classificação");
+
+        jCboClassificacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Livre", "10", "12", "14", "16", "18" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -144,15 +154,6 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jTxtPlataforma, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTxtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jFrmtPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -176,7 +177,20 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jBtnCancelar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnPesquisar)))
+                        .addComponent(jBtnPesquisar))
+                    .addComponent(jLabel6)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTxtPlataforma, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTxtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jFrmtPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jCboClassificacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -204,7 +218,11 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jFrmtPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(35, 35, 35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCboClassificacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jBtnPesquisar)
@@ -214,7 +232,7 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
                         .addComponent(jBtnIncluir)
                         .addComponent(jBtnAlterar)
                         .addComponent(jBtnExcluir)))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addGap(61, 61, 61))
         );
 
         pack();
@@ -294,12 +312,14 @@ public class JDlgBsoProdutos extends javax.swing.JDialog {
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
+    private javax.swing.JComboBox<String> jCboClassificacao;
     private javax.swing.JFormattedTextField jFrmtPreco;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField jTxtDesenvolvedora;
     private javax.swing.JTextField jTxtPlataforma;
     private javax.swing.JTextField jTxtTipo;

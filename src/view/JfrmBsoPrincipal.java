@@ -35,6 +35,7 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMnuUsuarios = new javax.swing.JMenuItem();
         jMnuClientes = new javax.swing.JMenuItem();
         jMnuFornecedor = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMnuProdutos = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnuSair = new javax.swing.JMenuItem();
@@ -65,6 +66,11 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMnuFornecedor.setText("Fornecedores");
         jMnuFornecedor.addActionListener(this::jMnuFornecedorActionPerformed);
         jMnuFornecedores.add(jMnuFornecedor);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setText("Vendedores");
+        jMenuItem1.addActionListener(this::jMenuItem1ActionPerformed);
+        jMnuFornecedores.add(jMenuItem1);
 
         jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-produtos-24.png"))); // NOI18N
@@ -131,6 +137,12 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jDlgBsoFornecedores.setVisible(true);
     }//GEN-LAST:event_jMnuFornecedorActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        JDlgBsoVendedor jDlgBsoVendedor = new JDlgBsoVendedor(null, true);
+        jDlgBsoVendedor.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -159,6 +171,7 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMnuClientes;
     private javax.swing.JMenuItem jMnuFornecedor;
     private javax.swing.JMenu jMnuFornecedores;

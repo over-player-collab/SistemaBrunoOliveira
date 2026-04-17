@@ -34,7 +34,7 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMnuFornecedores = new javax.swing.JMenu();
         jMnuUsuarios = new javax.swing.JMenuItem();
         jMnuClientes = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        jMnuFornecedor = new javax.swing.JMenuItem();
         jMnuProdutos = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMnuSair = new javax.swing.JMenuItem();
@@ -59,11 +59,12 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMnuClientes.addActionListener(this::jMnuClientesActionPerformed);
         jMnuFornecedores.add(jMnuClientes);
 
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-fornecedor-24.png"))); // NOI18N
-        jMenuItem2.setMnemonic('F');
-        jMenuItem2.setText("Fornecedores");
-        jMnuFornecedores.add(jMenuItem2);
+        jMnuFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-fornecedor-24.png"))); // NOI18N
+        jMnuFornecedor.setMnemonic('F');
+        jMnuFornecedor.setText("Fornecedores");
+        jMnuFornecedor.addActionListener(this::jMnuFornecedorActionPerformed);
+        jMnuFornecedores.add(jMnuFornecedor);
 
         jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-produtos-24.png"))); // NOI18N
@@ -124,6 +125,12 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jDlgBsoProdutos.setVisible(true);
     }//GEN-LAST:event_jMnuProdutosActionPerformed
 
+    private void jMnuFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFornecedorActionPerformed
+        // TODO add your handling code here:
+        JDlgBsoFornecedores jDlgBsoFornecedores = new JDlgBsoFornecedores(null, true);
+        jDlgBsoFornecedores.setVisible(true);
+    }//GEN-LAST:event_jMnuFornecedorActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -152,8 +159,8 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMnuClientes;
+    private javax.swing.JMenuItem jMnuFornecedor;
     private javax.swing.JMenu jMnuFornecedores;
     private javax.swing.JMenuItem jMnuProdutos;
     private javax.swing.JMenuItem jMnuSair;

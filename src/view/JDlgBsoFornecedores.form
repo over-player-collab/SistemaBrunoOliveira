@@ -37,7 +37,7 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel7" max="32767" attributes="0"/>
-                          <Component id="jFrmtContatoResponsavel" max="32767" attributes="0"/>
+                          <Component id="jFmtContatoResponsavel" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -47,7 +47,7 @@
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="jFrmtCep" min="-2" max="-2" attributes="0"/>
+                              <Component id="jFmtCep" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jTxtEndereco" max="32767" attributes="0"/>
                           </Group>
@@ -61,13 +61,13 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jFrmtEmail" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
+                          <Component id="jFmtEmail" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFrmtTelefone" min="-2" pref="104" max="-2" attributes="0"/>
+                          <Component id="jFmtTelefone" min="-2" pref="104" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -75,7 +75,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFrmtCnpj" alignment="0" pref="218" max="32767" attributes="0"/>
+                  <Component id="jFmtCnpj" alignment="0" pref="218" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -128,7 +128,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTxtNomeEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtNomeResponsavel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFrmtCnpj" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtCnpj" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -141,8 +141,8 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jTxtIncricao" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFrmtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFrmtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFmtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFmtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
@@ -160,8 +160,8 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jFrmtContatoResponsavel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFrmtCep" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtContatoResponsavel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtCep" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtCidade" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -276,7 +276,7 @@
         <Property name="text" type="java.lang.String" value="Cnpj"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFrmtCnpj">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtCnpj">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
@@ -290,9 +290,9 @@
         <Property name="text" type="java.lang.String" value="Email"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFrmtEmail">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtEmail">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFrmtEmailActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFmtEmailActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
@@ -300,21 +300,21 @@
         <Property name="text" type="java.lang.String" value="Telefone"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFrmtTelefone">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtTelefone">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Contato do Responsavel"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFrmtContatoResponsavel">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtContatoResponsavel">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cep"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFrmtCep">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtCep">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>

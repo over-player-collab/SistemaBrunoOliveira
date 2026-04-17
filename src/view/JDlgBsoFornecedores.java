@@ -29,11 +29,11 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
         jTxtCidade.setEnabled(false);
         jTxtEndereco.setEnabled(false);
         jTxtSiteOficial.setEnabled(false);
-        jFrmtCnpj.setEnabled(false);
-        jFrmtEmail.setEnabled(false);
-        jFrmtTelefone.setEnabled(false);
-        jFrmtContatoResponsavel.setEnabled(false);
-        jFrmtCep.setEnabled(false);
+        jFmtCnpj.setEnabled(false);
+        jFmtEmail.setEnabled(false);
+        jFmtTelefone.setEnabled(false);
+        jFmtContatoResponsavel.setEnabled(false);
+        jFmtCep.setEnabled(false);
         jCboEstado.setEnabled(false);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
@@ -46,11 +46,11 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
         jTxtCidade.setEnabled(valor);
         jTxtEndereco.setEnabled(valor);
         jTxtSiteOficial.setEnabled(valor);
-        jFrmtCnpj.setEnabled(valor);
-        jFrmtEmail.setEnabled(valor);
-        jFrmtTelefone.setEnabled(valor);
-        jFrmtContatoResponsavel.setEnabled(valor);
-        jFrmtCep.setEnabled(valor);
+        jFmtCnpj.setEnabled(valor);
+        jFmtEmail.setEnabled(valor);
+        jFmtTelefone.setEnabled(valor);
+        jFmtContatoResponsavel.setEnabled(valor);
+        jFmtCep.setEnabled(valor);
         jCboEstado.setEnabled(valor);
         jBtnCancelar.setEnabled(valor);
         jBtnConfirmar.setEnabled(valor);
@@ -67,11 +67,11 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
         jTxtCidade.setEnabled(true);
         jTxtEndereco.setEnabled(true);
         jTxtSiteOficial.setEnabled(true);
-        jFrmtCnpj.setEnabled(true);
-        jFrmtEmail.setEnabled(true);
-        jFrmtTelefone.setEnabled(true);
-        jFrmtContatoResponsavel.setEnabled(true);
-        jFrmtCep.setEnabled(true);
+        jFmtCnpj.setEnabled(true);
+        jFmtEmail.setEnabled(true);
+        jFmtTelefone.setEnabled(true);
+        jFmtContatoResponsavel.setEnabled(true);
+        jFmtCep.setEnabled(true);
         jCboEstado.setEnabled(true);
         jBtnCancelar.setEnabled(true);
         jBtnConfirmar.setEnabled(true);
@@ -88,11 +88,11 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
         jTxtCidade.setEnabled(false);
         jTxtEndereco.setEnabled(false);
         jTxtSiteOficial.setEnabled(false);
-        jFrmtCnpj.setEnabled(false);
-        jFrmtEmail.setEnabled(false);
-        jFrmtTelefone.setEnabled(false);
-        jFrmtContatoResponsavel.setEnabled(false);
-        jFrmtCep.setEnabled(false);
+        jFmtCnpj.setEnabled(false);
+        jFmtEmail.setEnabled(false);
+        jFmtTelefone.setEnabled(false);
+        jFmtContatoResponsavel.setEnabled(false);
+        jFmtCep.setEnabled(false);
         jCboEstado.setEnabled(false);
         jBtnCancelar.setEnabled(false);
         jBtnConfirmar.setEnabled(false);
@@ -123,17 +123,17 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         jTxtNomeResponsavel = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jFrmtCnpj = new javax.swing.JFormattedTextField();
+        jFmtCnpj = new javax.swing.JFormattedTextField();
         jLabel4 = new javax.swing.JLabel();
         jTxtIncricao = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jFrmtEmail = new javax.swing.JFormattedTextField();
+        jFmtEmail = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
-        jFrmtTelefone = new javax.swing.JFormattedTextField();
+        jFmtTelefone = new javax.swing.JFormattedTextField();
         jLabel7 = new javax.swing.JLabel();
-        jFrmtContatoResponsavel = new javax.swing.JFormattedTextField();
+        jFmtContatoResponsavel = new javax.swing.JFormattedTextField();
         jLabel8 = new javax.swing.JLabel();
-        jFrmtCep = new javax.swing.JFormattedTextField();
+        jFmtCep = new javax.swing.JFormattedTextField();
         jLabel9 = new javax.swing.JLabel();
         jTxtEndereco = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -181,7 +181,7 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
 
         jLabel5.setText("Email");
 
-        jFrmtEmail.addActionListener(this::jFrmtEmailActionPerformed);
+        jFmtEmail.addActionListener(this::jFmtEmailActionPerformed);
 
         jLabel6.setText("Telefone");
 
@@ -215,7 +215,7 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jFrmtContatoResponsavel))
+                            .addComponent(jFmtContatoResponsavel))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -223,7 +223,7 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
                                 .addGap(63, 63, 63)
                                 .addComponent(jLabel9))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jFrmtCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jFmtCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTxtEndereco))))
                     .addGroup(layout.createSequentialGroup()
@@ -233,17 +233,17 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
                             .addComponent(jLabel4))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jFrmtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFmtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel6)
-                            .addComponent(jFrmtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jFmtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3)
-                    .addComponent(jFrmtCnpj, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                    .addComponent(jFmtCnpj, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(jLabel10))
@@ -286,7 +286,7 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtNomeEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtNomeResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFrmtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -297,8 +297,8 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTxtIncricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jFrmtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jFrmtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jFmtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFmtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -311,8 +311,8 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFrmtContatoResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFrmtCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtContatoResponsavel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -369,9 +369,9 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtNomeEmpresaActionPerformed
 
-    private void jFrmtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFrmtEmailActionPerformed
+    private void jFmtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtEmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFrmtEmailActionPerformed
+    }//GEN-LAST:event_jFmtEmailActionPerformed
 
     /**
      * @param args the command line arguments
@@ -418,11 +418,11 @@ public class JDlgBsoFornecedores extends javax.swing.JDialog {
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
     private javax.swing.JComboBox<String> jCboEstado;
-    private javax.swing.JFormattedTextField jFrmtCep;
-    private javax.swing.JFormattedTextField jFrmtCnpj;
-    private javax.swing.JFormattedTextField jFrmtContatoResponsavel;
-    private javax.swing.JFormattedTextField jFrmtEmail;
-    private javax.swing.JFormattedTextField jFrmtTelefone;
+    private javax.swing.JFormattedTextField jFmtCep;
+    private javax.swing.JFormattedTextField jFmtCnpj;
+    private javax.swing.JFormattedTextField jFmtContatoResponsavel;
+    private javax.swing.JFormattedTextField jFmtEmail;
+    private javax.swing.JFormattedTextField jFmtTelefone;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

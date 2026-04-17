@@ -34,6 +34,8 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMnuSair = new javax.swing.JMenu();
         jMnuUsuarios = new javax.swing.JMenuItem();
         jMnuClientes = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -56,6 +58,19 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jMnuClientes.setText("Clientes");
         jMnuClientes.addActionListener(this::jMnuClientesActionPerformed);
         jMnuSair.add(jMnuClientes);
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-fornecedor-24.png"))); // NOI18N
+        jMenuItem2.setMnemonic('F');
+        jMenuItem2.setText("Fornecedores");
+        jMnuSair.add(jMenuItem2);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-produtos-24.png"))); // NOI18N
+        jMenuItem1.setMnemonic('P');
+        jMenuItem1.setText("Produtos");
+        jMenuItem1.addActionListener(this::jMenuItem1ActionPerformed);
+        jMnuSair.add(jMenuItem1);
         jMnuSair.add(jSeparator1);
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -103,6 +118,12 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
         jDlgBsoClientes.setVisible(true);
     }//GEN-LAST:event_jMnuClientesActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        JDlgBsoProdutos jDlgBsoProdutos = new JDlgBsoProdutos(null, true);
+        jDlgBsoProdutos.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -131,6 +152,8 @@ public class JfrmBsoPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMnuClientes;
     private javax.swing.JMenu jMnuSair;

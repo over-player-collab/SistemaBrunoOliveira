@@ -17,9 +17,9 @@ public class DaoBsoCompra extends DaoAbstract {
     public void insert(Object object) {
         BsoCompras compras = (BsoCompras) object;
 
-        String url = "jdbc:mysql://127.0.0.1:3306/banco_trabalho";
-        String user = "root";
-        String password = "";
+        String url = "jdbc:mysql://10.0.7.51:33062/db_bruno_oliveira";
+        String user = "bruno_oliveira";
+        String password = "bruno_oliveira";
 
         String sql = "INSERT INTO bso_compras (bso_idcompra, bso_fkfornecedor, bso_idusuario, bso_data, bso_forma_pagamento, bso_valor_total) VALUES (?, ?, ?, ?, ?, ?)";
 
